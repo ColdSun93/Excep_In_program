@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         int[] arrOne = { -5, 4, 2, 6 };
-        int[] arrTwo = { -2, 1, 2, 2 };
+        int[] arrTwo = { -2, 1, 2};
         int a = 0;
         Scanner scan = new Scanner(System.in);
         // Method1(a);
@@ -14,7 +14,7 @@ public class Main {
         // Method3(arrOne, a);
         // int[] arrThree = Method4(arrOne, arrTwo);
         double[] arrThree = Method5(arrOne, arrTwo);
-        
+
         PrintArr(arrThree);
 
     }
