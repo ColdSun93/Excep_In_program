@@ -1,6 +1,7 @@
 package hw_2;
 
 import java.io.BufferedReader;
+
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
@@ -61,11 +62,17 @@ public class Main {
             printSum(23, 234);
             int[] abc = { 1, 2 };
             abc[3] = 9;
+        } catch (NullPointerException ex) {
+            System.out.println("Указатель не может указывать на null!");
+        } catch (IndexOutOfBoundsException ex) {
+            System.out.println("Массив выходит за пределы своего размера!");
         } catch (NumberFormatException ex) {
             System.out.println("Деление на ноль");
-        } catch (ArrayIndexOutOfBoundsException ex) {
-            System.out.println("Задано значение индекса массива, не принадлежащее допустимому диапазону");
-        } catch (Throwable ex) {
+        } 
+        // catch (ArrayIndexOutOfBoundsException ex) {
+        //     System.out.println("Задано значение индекса массива, не принадлежащее допустимому диапазону");
+        // } 
+        catch (Throwable ex) {
             System.out.println("Что-то пошло не так...");
         }
     }
