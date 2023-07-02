@@ -17,8 +17,7 @@ public class Main {
         System.out.println("ФИО - строки, номертелефона - целое беззнаковое число без форматирования");
         System.out.println("Ввод всех элементов через пробел");
         String input_str;
-        //String path = "/Users/ColdSun/Documents/Exceptions_In_programming/hw_3/";
-        String path = "./Task2/";
+        String path = "/Users/ColdSun/Documents/Exceptions_In_programming/hw_3/";
         int keyExc;
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {

@@ -23,7 +23,6 @@ public class ListPeople {
     void showListPeople() {
         int index = 0;
         System.out.printf("%-3s %-15s %-15s %-15s %-12s %n" , "N", "surname", "name", "patronymic", "phone");
-
         for (People person : listPeople) {
             System.out.printf("%-3d) ", index);
             System.out.println(person.toStringPrint());
@@ -47,7 +46,4 @@ public class ListPeople {
     }
 
     }
-
-
-    
 }
